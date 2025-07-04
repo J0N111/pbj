@@ -1,0 +1,136 @@
+html {
+   background-color: #8d5c41;
+   overflow-x: hidden;
+   margin: 25px;
+}
+
+body {
+   background-color: #fed1be00;
+   padding-left: 3%;
+   padding-right: 3%;
+}
+
+h1 {  
+   font-size: 10vw; 
+   font-family: Caveat;
+   text-shadow: #2b1509 2px;
+}
+
+.colors {
+   font-weight: bold;
+   background: linear-gradient(45deg,#fae687,#ecbe74, #e09a65, #dc8761, #d6745d);
+   background-size: 400% 900%;
+   background-clip: text;
+   color: transparent;
+   animation: gradientCycle 10s ease infinite;
+}
+
+@keyframes gradientCycle {
+   0% {
+      background-position: 0% 50%;
+   }
+   50% {
+      background-position: 100% 50%;
+   }
+   100% {
+      background-position: 0% 50%;
+   }
+}
+
+.topBar {
+   position: sticky;
+   top: 0;
+   width: 100%;
+   height: 14vw;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   z-index: 9997;
+}
+
+.hide {
+   visibility: hidden !important;
+}
+
+.logo {
+   position: fixed;
+   top: 0;
+   visibility: visible;
+   align-items: center;
+   width: 24vw;
+   z-index: 999;
+}
+
+.vignette {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none; /* allows clicks through */
+      z-index: 9998;
+      background: radial-gradient(
+        ellipse at center,
+        rgba(0, 0, 0, 0) 75%,
+        rgba(0, 0, 0, 0.3) 100%
+      );
+    }
+
+.wide {
+   height: 30vw;
+   overflow: hidden;
+   position: relative;   
+   border-radius: 8px;
+}
+
+.wide img{
+   height: 100%;
+   object-fit: cover;
+   bottom: 10vh;
+}
+
+
+@media (max-width: 450px) {
+   .wide img {
+      bottom: 0vh;  
+   }
+}
+
+.dots {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: linear-gradient(45deg, #8d5c41, #502f1d, #2b1509, #180b04);
+   background-size: 400% 900%;
+   background-clip: text;
+   color: transparent;
+   animation: gradientCycle 30s ease infinite;
+}
+
+.flex-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.flex-grid img {
+   width: calc(50% - 10px); /* 2 per row with gap */
+   height: auto;
+   border-radius: 8px;
+}
+
+.flex-gridStack img {
+   width: calc(100% - 10px);
+   height: auto;
+   gap: 10px;
+}
+
+.col-3 {
+   padding: 0 2% !important;
+}
+
+.col-6 {
+   padding: 0 2% !important;
+}
+
+
