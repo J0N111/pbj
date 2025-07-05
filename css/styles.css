@@ -97,7 +97,16 @@ h1 {
 }
 
 h2 {   
+   font-size: 3vw;
+   font-family: Caveat;
+}
+
+.portfolio {
    font-size: 4vw;
+   font-weight: bold;
+   font-family: Caveat;
+   text-align: center;
+   color: #180b04;
 }
 
 .dots {
@@ -115,12 +124,14 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    justify-content: center;
 }
  
 .flex-grid img {
-   width: calc(50% - 10px); /* 2 per row with gap */
+   width: calc(33.33% - 10px); /* 2 per row with gap */
    height: auto;
    border-radius: 8px;
+   margin: auto 0;
 }
 
 .flex-gridStack img {

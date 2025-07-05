@@ -3,24 +3,27 @@ const logo = document.getElementById('logo');
 const stacked1 = document.getElementById('stacked1');
 const stacked2 = document.getElementById('stacked2');
 const width = window.innerWidth;
+bigPicSec1 = 
 
-window.addEventListener('scroll', () => {
+// PBJ SCROLL DOWN BAR
+// window.addEventListener('scroll', () => {
 
-    if (window.scrollY > 80) {
+//     if (window.scrollY > 80) {
 
-        words.classList.add('hide');
-        logo.classList.remove('hide');
+//         words.classList.add('hide');
+//         logo.classList.remove('hide');
 
-        // console.log('Page has been scrolled down');
-    } else {
+//         // console.log('Page has been scrolled down');
+//     } else {
         
-        words.classList.remove('hide');
-        logo.classList.add('hide');
+//         words.classList.remove('hide');
+//         logo.classList.add('hide');
         
-        // console.log('Page is at the top');
-    }
-});
+//         // console.log('Page is at the top');
+//     }
+// });
 
+// UNSTACKING THE IMAGES BASED ON SCREEN SIZE
 // window.addEventListener("resize", () => {
 //     const width = window.innerWidth;
 //     console.log(`New size: ${width}`);
