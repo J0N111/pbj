@@ -3,7 +3,42 @@ const logo = document.getElementById('logo');
 const stacked1 = document.getElementById('stacked1');
 const stacked2 = document.getElementById('stacked2');
 const width = window.innerWidth;
-bigPicSec1 = 
+
+const mainImageCan = document.getElementById('bigImgCan');
+const thumbnailsCan = document.querySelectorAll('.swapCan');
+
+thumbnailsCan.forEach(img => {
+    img.addEventListener('click', () => {
+        // Swap src values
+        const tempSrc = mainImageCan.src;
+        mainImageCan.src = img.src;
+        img.src = tempSrc;
+    });
+});
+
+const mainImagePort = document.getElementById('bigImgPort');
+const thumbnailsPort = document.querySelectorAll('.swapPort');
+
+thumbnailsPort.forEach(img => {
+    img.addEventListener('click', () => {
+        // Swap src values
+        const tempSrc = mainImagePort.src;
+        mainImagePort.src = img.src;
+        img.src = tempSrc;
+    });
+});
+
+const mainImageGrad = document.getElementById('bigImgGrad');
+const thumbnailsGrad = document.querySelectorAll('.swapGrad');
+
+thumbnailsGrad.forEach(img => {
+    img.addEventListener('click', () => {
+        // Swap src values
+        const tempSrc = mainImageGrad.src;
+        mainImageGrad.src = img.src;
+        img.src = tempSrc;
+    });
+});
 
 // PBJ SCROLL DOWN BAR
 // window.addEventListener('scroll', () => {
