@@ -11,7 +11,7 @@ body {
 }
 
 h1 {  
-   font-size: 10vw; 
+   font-size: 8vw; 
    font-family: Caveat;
    text-shadow: #2b1509 2px;
 }
@@ -77,10 +77,14 @@ h1 {
     }
 
 .wide {
-   height: 30vw;
-   overflow: hidden;
-   position: relative;   
+   max-width: 100%;
+   /* overflow: hidden; */
+   /* position: relative;    */
    border-radius: 8px;
+   justify-content: center;
+   align-items: center;
+   margin: auto;
+
 }
 
 .wide img{
